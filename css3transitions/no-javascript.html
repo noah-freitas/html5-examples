@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>No JavaScript CSS3 Transition Example</title>
+    <style>
+      #object {
+        height: 150px;
+        width: 200px;
+        background: #ccc;
+        border-radius: 2em;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        -webkit-transition: left 2s;
+        transition: left 2s;
+        text-align: center;
+        font-size: 2em;
+        padding-top: 100px;
+      }
+      #object:hover {
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="object">:hover Over Me!</div>
+    <footer>This should work in Chrome &amp; Firefox at least.</footer>
+  </body>
+</html>
